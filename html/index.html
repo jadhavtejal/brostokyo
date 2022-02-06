@@ -5,20 +5,89 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <style rel="stylesheet" src="./css/index.css"></style>
+        <link rel="stylesheet" href="../css/index.css"/>
+        <script src="../javascript/script.js"></script>
+
+        <!-- Bootstrap links -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <!-- Jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     </head>
     <body>
-        <section>
-            <nav>
-                <ul style="float:left">
-                    <li>ICon</li>
-                </ul>
-                <ul style="float:right">
-                <li><a href="#">London</a></li>
-                <li><a href="#">Paris</a></li>
-                <li><a href="#">Tokyo</a></li>
-                </ul>
-            </nav>
+      
+        <header class="head fixed-top">
+          <nav class="navbar navbar-expand-lg fixed-top " id="nav">
+            <img src="../images/logo.png" class="navbar-brand top_logo"  alt="logo">
+            <img src="../images/logo_blk.png" class="navbar-brand fixed_logo"  alt="logo"> 
+            <button id="toggler" class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link active" href="#">BROSTOKYOでできること <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">トレーニングの様子</a>
+                <a class="nav-item nav-link" href="#">料金プラン</a>
+                <a class="nav-item nav-link" href="#">場所</a>
+                <a class="nav-item nav-link" href="#">ジム飯</a>
+                <a class="nav-item nav-link" href="#">よくある質問</a>
+                <a class="nav-item nav-link" href="#">役立つ記事</a>
+                <a class="nav-item nav-link" id="btn_toggle" href="#">無料カウンセリングをする</a>
+                <a class="nav-item nav-link" id="btn" href="#">お申し込み</a>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <section id="carousel">
+          <h1 id="carouselHeading">ゆるく継続が実は <br> 最強のダイエット</h1>
+          <br>
+          <button id="carouselbtn">今すぐお申し込み</button>
         </section>
+
+        <section id="content1" class="text-center" >
+            <header class="text-center mt-5">
+              <h6>無理なく目標を達成 </h6>
+              <h3>コンセプト</h3>
+              <h5 class="sm_header">CONCEPTS</h5>
+            </header>
+            <div class="row justify-content-center">
+              <div class="card col-sm-3 col-xs-12 m-sm-5">
+                <img class="card-img-top" src="../images/concept_01.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card col-sm-3 col-xs-12 m-sm-5">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card col-sm-3 col-xs-12 m-sm-5">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+        </section>  
+      
+        <script>       
+          $(window).scroll(function(){
+            $('.head').toggleClass('navbarHeader', $(this).scrollTop() > 50);
+          });
+        </script>
     </body>
 </html>
