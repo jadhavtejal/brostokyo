@@ -126,9 +126,114 @@ nav{
     letter-spacing: 0.56px;
     color: #676767;
 }
+#content1 .card-title{
+    font-weight: bold;
+}
+#content1  .card-text{
+    font: normal normal normal 14px/25px Noto Sans JP;
+    letter-spacing: 0.56px;
+    color: #232323;
+}
 /*Section 1 ends*/
 
+/*Section 2 starts*/
+#section2{
+    background-image: url('../images/greeting_pc.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#section2 h6, #section h3{
+    color: #FFFFFF;
+    opacity: 1;
+    font-weight: bolder
+}
+#section2 h3{
+    font-size: 45px;
+    
+}
+#section2 .sm_head{
+    font: normal normal 200 14px/37px Montserrat;
+    letter-spacing: 0.56px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+#section2 #section2btn{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 100px;
+    color: #000;
+    width: 384px;
+    height: 60px;
+    opacity: 1;
+    border:none;
+    font-weight:bolder;
+}
+/*Section 2 ends*/
+/* Section 3 starts*/
+#section3{
+    padding-bottom: 100px;
+}
+#section3 .card, #section4 .card{
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    color: white;
+}
+#section3 .card1{
+    background-image: url('../images/challenge_01.jpg');
+}
+#section3 .card2{
+    background-image: url('../images/challenge_02.jpg');
+}
+#section3 .card3{
+    background-image: url('../images/challenge_03.jpg');
+}
+#section3 .card4{
+    background-image: url('../images/challenge_04.jpg');
+}
+#section3 .card5{
+    background-image: url('../images/challenge_05.jpg');
+}
+#section3 .card6{
+    background-image: url('../images/challenge_06.jpg');
+}
+#section3 .card-title{
+    font: normal normal 200 31px/37px Montserrat;
+    letter-spacing: 1.24px;
+    color: #000000;
+    margin-top: -15px;
+    font-weight:300;
+}
+/*section 3 ends */
+/*section 4 start*/
+#section4 #img{
+    width: 80%;
+    margin-top: -80px;
+}
+#section4 #img_mobile{
+    display: none;
+}
 
+#section4, #section4 .card{
+    background-color: #000000;
+    margin-top: 15px;
+}
+
+#section4 .card-title{
+    text-align: center;
+    letter-spacing: 1.6px;
+    color: #5F5F5F;
+    font-weight: 600;
+    margin-top: -215px;
+    font-size: 40px;
+}
+#section4 .card-footer{
+    font: normal normal bold 16px/27px Noto Sans JP;
+    letter-spacing: 0.64px;
+}
+
+
+/*section 4 ends */
 
 @media only screen and (max-width: 600px) {
     #carousel{
@@ -191,6 +296,26 @@ nav{
         margin-bottom: 30px;
     }
 
-
-
+    #section2{
+        background-image: url('../images/greeting-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+        width: 100%;
+    }
+    #section4 #img_mobile{
+        width: 100%;
+        height: 200px;
+        margin-top: -80px;
+        text-align: center;
+    }
+    #section4 #img{
+        display: none;
+    }
+    #section4 #img_mobile{
+        display: block;
+    }
+    #section4 .card{
+        margin-top: 10px;
+    }
 }
